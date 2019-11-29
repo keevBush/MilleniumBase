@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="/css/style.css")
+        link(rel="stylesheet", href="/css/docs.css")
+        link(rel="stylesheet", href="/css/fontawesome.min.css")
+        link(rel="stylesheet", href="/css/stylesheet.css")
+        link(rel="stylesheet", href="/css/semantic.min.css")
+        link(rel="stylesheet prefetch", href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body.docs.loaded
+        .container-fluid.container
+            .border-bottom.row.position-relative.pb-5
+                header(class="header row", style="z-index: 1;", id="header-main")
+                    nav(style="padding: 0;" class="navbar navbar-main navbar-expand-lg fixed-top navbar-shadow navbar-light bg-white border-bottom" id="navbar-main")
+                        .container-fluid.justify-content-between
+                            .container-fluid
+                                .row    
+                                    img(class="mt-3", style="height:50px; width:140px;" ,src="/img/logo/millenium_blue.PNG")
+                                    div(class="col mt-4 ui header") 
+                                    .col-md-2.right
+                                        .btn-group.btn.btn-sm.col-md-2.btn-icon.d-none.d-lg-inline-flex
+                                            button(type="button",class="btn btn-secondary dropdown-toggle", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+                                                span(class="avatar mr-1 bg-warning text-white avatar-sm") WS
+                                                span Username
+                                            .dropdown-menu.py-0
+                                                each l in [1,161,1,1]
+                                                    .list-group.list-group-flush
+                                                        .list-group
+                                                            a(href="#", class="list-group-item list-group-item-action")
+                                                                .d-flex
+                                                                    i(class=" fa-bell mr-3")
+                                                                div
+                                                                    .text-sm.lh-150 Notification de Bush
+                                                                    small(class="d-block text-muted") 3 hrs ago                                                    
+                .mt-7.container(style="z-index: 0;")
+                    .ui.breadcrumb.mb-2
+                        a(class="section") Applications
+                        i(class="right chevron icon divider")
+                        .active.section Dashboard
+                    block content
+
+
+    script(src="/js/jquery.min.js")
+    script(src="/js/semantic.min.js")
+    script(src="/js/apexcharts.min.js")
+    script(src="/js/bootstrap.bundle.min.js")
+    script(src="/js/in-view.min.js")
+    script(src="/js/sticky-kit.min.js")
+    script(src="/js/svg-injector.min.js")
+    script(src="/js/feather.min.js")
+    script(src="/js/imagesloaded.pkgd.min.js")
+    script(src="/js/jquery.scrollbar.min.js")
+    script(src="/js/jquery-scrollLock.min.js")
+    script(src="/js/quick-website.js")
+        
