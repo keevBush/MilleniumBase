@@ -1,0 +1,23 @@
+extends ../layout/app.pug
+block content
+    .row
+        .ui.breadcrumb.mb-2.col
+            a(class="section") Applications
+            i(class="right chevron icon divider")
+            a(class="section") Settings
+            i(class="right chevron icon divider")
+            .active.section Users
+    .row
+        .container
+            each r in routes
+                .row
+                    .ui.breadcrumb.mb-2.col 
+                        .active.section #{r.name} :  
+                        .active.section #{r.path}
+                        .active.section.ui.violet.label.ml-3.pl-1.pr-1.pt-1.pb-1 #{r.method}
+                    .ui.form.col.ml-3
+                        .field
+                            select.ui.dropdown(multiple="")
+                                each u in users
+                                    option(value=u.username) #{u.username}
+                    

@@ -2,8 +2,11 @@
   "compilerOptions": {
     "module": "commonjs",
     "esModuleInterop": true,
-    "target": "es5",
+    "target": "es6",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true ,
     "noImplicitAny": true,
+   
     "moduleResolution": "node",
     "sourceMap": true,
     "outDir": "dist",

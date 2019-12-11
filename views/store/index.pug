@@ -1,0 +1,38 @@
+extends ../layout/app.pug
+block content
+    .row
+        .ui.breadcrumb.mb-2.col
+            .active.section Store
+        .ui.icon.input.loading.right.floated.mb-2.ml-3
+            input(type="text",placeholder="Search ...")
+            i.search.icon
+    .row
+        .ui.three.column.centered.grid
+            each a in [1,1,1,1,1,1]
+                .column
+                    .ui.card
+                        .content
+                            .header
+                                .row.pl-3
+                                    img.ui.tiny.rounded.image(src="/img/avatar/person.jpg")
+                                    .container.col
+                                        p(style="font-size:13px") App name
+                                        p(style="font-size:13px") v3.12.101
+                                        p(style="font-size:13px") Rating 4 / 5
+                            .meta.mt-1
+                                .category.mini(style="font-size:13px") Last use Nov 3, 2019
+                            .description
+                                i(style="font-size:13px") La description de l'application
+                            a.right.floated.ui.primary.animated.button.mini 
+                                .visible.content Install
+                                .hidden.content
+                                    i.right.download.icon
+                            a.right.floated.ui.animated.button.mini 
+                                .visible.content Details
+                                .hidden.content
+                                    i.right.info.circle.icon
+                        .extra.content.mini(style="font-size:13px") By 
+                            img.ui.mini.circular.image(src="/img/avatar/person.jpg")
+                            label.ml-1 username
+                            .right.floated.ui.button.mini Published date
+                            

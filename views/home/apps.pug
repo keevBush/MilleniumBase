@@ -1,0 +1,34 @@
+extends ../layout/app.pug
+block content
+    .row
+        .ui.breadcrumb.mb-2.col
+            a(class="section") Applications
+            i(class="right chevron icon divider")
+            .active.section Dashboard
+        .ui.icon.input.loading.right.floated.mb-2.ml-3
+            input(type="text",placeholder="Search ...")
+            i.search.icon
+        a.ui.vertical.primary.animated.button.mb-2.ml-3
+            .visible.content
+                i.shop.icon
+            .hidden.content Store
+    .row
+        .ui.three.column.centered.grid
+            each a in apps
+                .column
+                    .ui.card
+                        .content
+                            .header #{a}
+                            .meta
+                                .category.mini Last use Nov 3, 2019
+                            .description
+                                p La description de l'application
+                        .extra.content
+                            a.right.floated.ui.animated.button.mini 
+                                .visible.content Settings
+                                .hidden.content
+                                    i.right.cog.icon
+                            a.right.floated.ui.primary.animated.button.mini 
+                                .visible.content Launch
+                                .hidden.content
+                                    i.right.arrow.icon

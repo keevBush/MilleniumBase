@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="/css/style.css")
+        link(rel="stylesheet", href="/css/docs.css")
+        link(rel="stylesheet", href="/css/fontawesome.min.css")
+        link(rel="stylesheet", href="/css/semantic.min.css")
+        link(rel="stylesheet prefetch", href="/css/icon.min.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Millenium - #{title}
+    body(style="background-image: linear-gradient(to right bottom, #222222, #888888, #BBBBBB, #EEEEEE, #FFFFFF)")
+        .ui.card.center.aligned.mt-7
+            .content
+                .header 
+                    img(class="mt-3", style="height:60px; width:165px;" ,src="/img/logo/millenium_blue.PNG")
+                    br
+                    span.mb-3.mt-2(style="color:royalblue;font-size:14px") Login
+                .description
+                    form.ui.mini.form
+                        .field
+                            .ui.left.icon.input
+                                i.user.icon
+                                input#email(type="text", placeholder="Username or Email")
+                        .field
+                            .ui.left.icon.input
+                                i.lock.icon
+                                input#pwd(type="password", placeholder="Password")
+                        .ui.buttons.mini
+                            a.ui.button Sign up
+                            .or
+                            button(type="submit").ui.positive.loading.button Login
+        .ui.card.center.aligned.mt-2
+            .content 
+                .field
+                    h6(style="text-align:center;") Powered by 
+                        a(href="#") KFB Partners
+
+
+
+
+            
+    script(src="/js/jquery.min.js")
+    script(src="/js/semantic.min.js")
+    script $('select.dropdown').dropdown();
+    script(src="/js/apexcharts.min.js")
+    script(src="/js/bootstrap.bundle.min.js")
+    script(src="/js/in-view.min.js")
+    script(src="/js/quick-website.js")
