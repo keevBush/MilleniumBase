@@ -1,0 +1,5 @@
+PORT=3000
+
+DIALECT = postgres
+
+DATABASE_STRING = postgres://postgres:kev123456@127.0.0.1:5432/milleniumDb
