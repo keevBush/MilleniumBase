@@ -28,7 +28,7 @@
         "express-validator": "^6.3.0",
         "file-system": "^2.2.2",
         "ip6addr": "^0.2.3",
-        "pg": "^7.14.0",
+        "pg": "^8.3.0",
         "pg-hstore": "^2.3.3",
         "pug": "^2.0.4",
         "reflect-metadata": "^0.1.13",
